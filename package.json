@@ -1,24 +1,25 @@
 {
   "name": "daily-micro-cheer",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 5173",
     "build:web": "tsc -b && vite build",
-    "build": "npm run build:web && ait build",
+    "build": "npm run build:web",
+    "build:ait": "npm run build:web && ait build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@apps-in-toss/web-framework": "^3.0.0",
-    "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "typescript": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",
-    "@types/react-dom": "latest"
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "typescript": "latest",
+    "vite": "latest"
   }
 }
